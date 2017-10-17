@@ -15,14 +15,24 @@
 				</ul>
 			</nav>
 		</header>
-		<h1>Omid's Website</h1>
-		<ol class="posts">
-			<li><a href="/blog/8-experiments-in-motivation">8 Experiments in Motivation</a></li>
-			<li><a href="/blog/a-mindful-shift-of-focus">A Mindful Shift of Focus</a></li>
-			<li><a href="/blog/how-to-develop-an-awesome-sense-of-direction">How to Develop an Awesome Sense of Direction</a></li>
-			<li><a href="/blog/training-to-be-a-good-writer">Training to Be a Good Writer</a></li>
-			<li><a href="/blog/what-productivity-systems-wont-solve">What Productivity Systems Won't Solve</a></li>
-		</ol>
+		<p id = "messageArea"></p>
+		<h1>Contact Us</h1>
+		<form action="/contact/hi" id= "form" method="POST">
+			<label for="inputName">Name</label>
+			<input type="text" name="inputName" id="inputName"/>
+			<br><br>
+			<label for="subject">Subject</label>
+			<input type="text" name="subject" id="subject"/>
+			<br><br>
+			<label for="message">Message</label>
+			<input type="text" name="message" id="message"/>
+			<br><br>
+			<input type="submit" value="Submit"/>
+			<br>
+			<br>
+			<textarea>{{add_to_body}}</textarea>
+			
+		</form>
 
 		<footer class ="footer">
 			<ul>
@@ -31,6 +41,9 @@
 				<li><a href="/contact">Contact Us</a></li>
 			</ul>
 		</footer>
+		<script src="/static/js/script.js"></script>
 	</body>
 </html>
+	
+
 	
